@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Personal Details</title>
+</head>
+<body>
+    <h1>Your Personal Details</h1>
+    
+    <!-- Form to enter personal details -->
+    <form id="detailsForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" required><br>
+
+        <button type="button" onclick="generateLink()">Generate Link</button>
+    </form>
+
+    <!-- Display link after generating -->
+    <div id="linkContainer" style="display: none;">
+        <p>Share this link:</p>
+        <input type="text" id="shareLink" readonly>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
